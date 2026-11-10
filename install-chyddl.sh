@@ -128,7 +128,7 @@ cat > "$chyddl_bootstrap_dir/install.py" <<'CHYDDL_INSTALL'
 import os,sys,subprocess,tempfile,shutil
 from pathlib import Path
 import update_core as core
-VERSION="14.9.33"
+VERSION="14.9.34"
 def pinned():
  raw=core.fetch('downloads-v'+VERSION+'/update.json',65536);sig=core.fetch('downloads-v'+VERSION+'/update.sig',256)
  data=core.verify_document(raw,sig)
@@ -164,7 +164,10 @@ with tempfile.TemporaryDirectory(prefix='chyddl-install-') as temp:
        if int(fields[7])!=os.getuid():raise SystemExit('Der lokale Dienst gehört einem anderen Benutzer. Keine Anmeldung oder Installation ausgeführt.')
        owned=True
     if not owned:raise SystemExit('Dienstbesitzer konnte nicht bestätigt werden. App schließen und erneut versuchen.')
-    subprocess.run(['/usr/bin/chyddl-safe-stop'],check=True)
+    extracted=Path(temp)/'stop-helper'
+    subprocess.run(['dpkg-deb','--extract',str(package),str(extracted)],check=True)
+    result=subprocess.run([sys.executable,'-I',str(extracted/'opt/chyddl/safe-stop.py')],stdin=subprocess.DEVNULL)
+    if result.returncode:raise SystemExit('Sicheres Beenden nicht bestätigt. App schließen und Installation wiederholen; kein chyddl-Kennwort erforderlich.')
   Path(temp).chmod(0o755);stage.chmod(0o755);package.chmod(0o644)
   subprocess.run(([] if os.getuid()==0 else ['sudo','--'])+['apt-get','install',str(package)],check=True)
   print('chyddl installiert. Künftige signierte Updates laufen direkt in der App.')
