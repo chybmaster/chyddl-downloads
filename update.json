@@ -1,0 +1,45 @@
+{
+  "android": {
+    "name": "chyddl-android-0.1.4.apk",
+    "sha256": "174b82d4235178a440a08afa3ea5c73de9a4018ab5b3691e5be932651ffc6a93",
+    "signer_sha256": "fb12ecc51545ccb4c0979f13004c003e09b55dbae6d1a8ab8d009898cb1d8ef4",
+    "size": 1514508,
+    "version": "0.1.4",
+    "version_code": 5
+  },
+  "desktop": {
+    "name": "chyddl_14.9.35_amd64.deb",
+    "parts": [
+      {
+        "name": "chyddl_14.9.35_amd64.deb.part00",
+        "sha256": "0aa76f7ef1b65fbe52b98894c6b8f82a8fca9f50551ba974681556f0d1becb70",
+        "size": 33554432
+      },
+      {
+        "name": "chyddl_14.9.35_amd64.deb.part01",
+        "sha256": "cc2d370cce4c84294f5f8083a00b3ee4841410246a628397fc157feea651139e",
+        "size": 33554432
+      },
+      {
+        "name": "chyddl_14.9.35_amd64.deb.part02",
+        "sha256": "e7252618811eb3ad9495fbe04c6335a0ca7c9fc9dbe3425452e4c8ff651fa82d",
+        "size": 33554432
+      },
+      {
+        "name": "chyddl_14.9.35_amd64.deb.part03",
+        "sha256": "2172e3b2896a647072dbf99e115341b52440b84e9d7952c109faf9fae384d11d",
+        "size": 33554432
+      },
+      {
+        "name": "chyddl_14.9.35_amd64.deb.part04",
+        "sha256": "2bbeceff6a0470828555d5de069f4500171f8bc799a3a95dd349c6ae612732a7",
+        "size": 10604820
+      }
+    ],
+    "sha256": "32950fc4006bc8a4b17e31c189b33750235bec869e59e0ff3f85715eddebca97",
+    "size": 144822548
+  },
+  "schema": 1,
+  "source_commit": "6bdfa3a774f753c0b8be9bb658aa18a2e7bafd6b",
+  "version": "14.9.35"
+}
