@@ -128,7 +128,7 @@ cat > "$chyddl_bootstrap_dir/install.py" <<'CHYDDL_INSTALL'
 import os,sys,subprocess,tempfile,shutil
 from pathlib import Path
 import update_core as core
-VERSION="14.9.36"
+VERSION="14.9.37"
 def pinned():
  raw=core.fetch('downloads-v'+VERSION+'/update.json',65536);sig=core.fetch('downloads-v'+VERSION+'/update.sig',256)
  data=core.verify_document(raw,sig)

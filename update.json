@@ -8,38 +8,38 @@
     "version_code": 5
   },
   "desktop": {
-    "name": "chyddl_14.9.36_amd64.deb",
+    "name": "chyddl_14.9.37_amd64.deb",
     "parts": [
       {
-        "name": "chyddl_14.9.36_amd64.deb.part00",
-        "sha256": "c90b398093cb6be83eb044f0ad9cba927a08edc947f07595fa0b9a8a70e10a6c",
+        "name": "chyddl_14.9.37_amd64.deb.part00",
+        "sha256": "7e1fd1315541f622ee1105000fa0d85f7f98e7963751eea356ee42da8139bcce",
         "size": 33554432
       },
       {
-        "name": "chyddl_14.9.36_amd64.deb.part01",
-        "sha256": "ff8105f9b4f6695274b84fa6133aa945f259f4c1830a492af1a507b7db975b3f",
+        "name": "chyddl_14.9.37_amd64.deb.part01",
+        "sha256": "d4f9946c51cfd6bcd47298039ac8534273f30ae272b4712dde07ad114b1eb9be",
         "size": 33554432
       },
       {
-        "name": "chyddl_14.9.36_amd64.deb.part02",
-        "sha256": "e338a3671d04c3be0802f977656aece79575013643bb9f5184e815ca36a02904",
+        "name": "chyddl_14.9.37_amd64.deb.part02",
+        "sha256": "7e20c8691b52a639ebf16432ab19876a1720b6f93ceccb7c7fc1f9eedcf169b1",
         "size": 33554432
       },
       {
-        "name": "chyddl_14.9.36_amd64.deb.part03",
-        "sha256": "d65f74dd011b547786e2e6ca8ced110979bc71a2b37fd8c1116dc440e168a949",
+        "name": "chyddl_14.9.37_amd64.deb.part03",
+        "sha256": "5ebd9df466ac6b6c325f04e4d1f240d02a1cdb262d55d014c8e987269d3372d5",
         "size": 33554432
       },
       {
-        "name": "chyddl_14.9.36_amd64.deb.part04",
-        "sha256": "d727027edfb7753eee7f12d2ebb19d1334304e33f4df58e8e5f87e022fbc7f2d",
-        "size": 10604180
+        "name": "chyddl_14.9.37_amd64.deb.part04",
+        "sha256": "63ca2dde82200348783cba2276dcf7ddd806c75791e036a2167ffc4300685d97",
+        "size": 10601904
       }
     ],
-    "sha256": "5cb4f73ef87e0fd3c96091d36d9bcb767687f857bfed81bf8ddea923b14e96f5",
-    "size": 144821908
+    "sha256": "62a3a4d0b678f00fbbf6675db46fc6fc2c94b5b7e376869b102a8f372964f48c",
+    "size": 144819632
   },
   "schema": 1,
-  "source_commit": "498632ace3090b8a05a6a232a98bf9ea359657b4",
-  "version": "14.9.36"
+  "source_commit": "7c59160efb788044ea1d022fdea4965c2c0551ab",
+  "version": "14.9.37"
 }
