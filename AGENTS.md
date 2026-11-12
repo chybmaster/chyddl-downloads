@@ -1,0 +1,14 @@
+# Arbeitsregeln für chyddl-downloads
+
+Dieses öffentliche Repository dient der Bereitstellung von chyddl-Downloads. Keine privaten Quelltexte, Schlüssel, Nutzerdaten oder ungeprüften Artefakte veröffentlichen. Release-Dateien, Signaturen und bestehende Downloadlinks nicht ohne ausdrücklichen Auftrag verändern. Keine automatische Veröffentlichung oder kostenpflichtigen Dienste anstoßen.
+
+## GitHub Copilot Pro – bevorzugte Umsetzung und sparsame Kontingentnutzung
+
+**Ziel:** GitHub Copilot Cloud Agent übernimmt nach Möglichkeit klar abgegrenzte, bereits beauftragte Implementierungen, damit ChatGPT-/Codex-Kontingent für Planung, kritische Prüfungen und schwierige Fälle verfügbar bleibt. Diese Arbeitsaufteilung ist keine pauschale Freigabe neuer Aufträge, kostenpflichtiger Mehrnutzung oder Veröffentlichungen.
+
+- **Copilot zuerst prüfen:** Kleine bis mittlere, verständlich beschriebene Aufgaben wie Bugfixes, UI, Tests, Dokumentation und isolierte Funktionen bevorzugt als GitHub Issue an Copilot geben, **wenn** der Nutzer die konkrete Umsetzung/Delegation freigegeben hat und der Agent tatsächlich verfügbar ist. Architekturentscheidungen, Rechte, sensible Daten, Migrationen, Restore und andere Hochrisikoänderungen zuerst gesondert bewerten; bei Bedarf ChatGPT/Codex heranziehen. Bestehende Freigabe- und Modellregeln gelten weiter.
+- **Saubere Aufträge:** Jedes delegierte Issue nennt Ziel, Ausgangsfehler, begrenzte betroffene Bereiche, überprüfbare Akzeptanzkriterien, passende Tests und ausdrücklich ausgeschlossene Änderungen. Nur unabhängige Teilaufträge parallel starten; eine Aufgabe nie gleichzeitig von Copilot und Codex implementieren lassen.
+- **Sichere Lieferung:** Copilot arbeitet in eigenem Branch und liefert einen nachvollziehbaren Pull Request. Keine direkte Änderung des Zielbranches, kein automatischer Merge, Release, Deployment, Löschen von Nutzerdaten oder Ausweiten von Berechtigungen. Vor Übernahme Diff, Regressionen, Schutzvorgaben und relevante CI-Ergebnisse prüfen; vorgeschriebene unabhängige Reviews nicht durch ein Eigenreview ersetzen.
+- **Kostenkontrolle:** Kleine Änderungen bündeln; unnötige Agenten-Neustarts, wiederholte Vollanalysen und spekulative Testschleifen vermeiden. Keine kostenpflichtigen Zusatz-Credits, Tarif-Upgrades, Bezahldienste oder ungefragten externen KI-Aufrufe veranlassen. Bei Kontingentgrenzen, unerwartetem Aufwand oder Risiko den belegten Zwischenstand sichern und Entscheidung einholen. Copilot Pro besitzt ein **eigenes begrenztes** Kontingent; Ausführung und Kosten nicht als kostenlos oder unbegrenzt darstellen.
+- **Nachweis statt Annahme:** AGENTS.md erteilt keine GitHub-API-Berechtigung und startet keinen Agenten. Falls direkte Zuweisung nicht möglich ist, nur das Issue/den Auftrag vorbereiten und den fehlenden Schritt benennen. Abschluss mit PR-Link, wirklich ausgeführten Tests, Restproblemen und nachweisbarem Verbrauch; keine erfundenen Einsparungsquoten.
+
